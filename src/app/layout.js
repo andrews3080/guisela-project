@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import MusicPlayer from "./components/MusicPlayer"; // ✅ Add this
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,6 +23,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* ✅ Now music stays across all pages */}
+        <MusicPlayer />
         {children}
       </body>
     </html>
