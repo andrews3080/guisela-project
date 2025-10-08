@@ -41,14 +41,14 @@ const VideoPage = () => {
             >
               <div className="relative w-full aspect-video bg-gray-200">
                 <video
-                  src={video.src}
-                  className="w-full aspect-video object-cover"
-                  muted
-                  loop
-                  playsInline
-                  preload="metadata"
-                  onLoadedMetadata={(e) => e.target.currentTime = 0.1}
-                />
+                src={video.src}
+                className="w-full aspect-video object-cover"
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                onLoadedMetadata={(e) => e.target.currentTime = 0.1}
+              />
 
                 {/* Soft overlay for better contrast */}
                 <div className="absolute inset-0 bg-black/10" />
